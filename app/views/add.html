@@ -1,0 +1,12 @@
+<form ng-controller="AddCtrl">
+    <input type="text"
+       ng-model="newEvent.name"
+       placeholder="Name"
+       ng-required="true"/>
+    <input type="text"
+       pick-a-date="date"
+       ng-model="newEvent.date"
+       placeholder="Date"
+       ng-required="true"/>
+    <button type="submit" class="btn btn-primary" ng-click="addEvent(newEvent)">Add Event</button>
+</form>
